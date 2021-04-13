@@ -2,7 +2,7 @@
 title: ESA Stack
 email: esa.stack@oppo.com
 url: https://esastack.github.io
-github: https://esastack.github.io/
+github: &github https://esastack.github.io/
 description: "Elastic Service Architecture"
 keywords: "Micro-Services, Service Mesh, Framework, Java"
 skills: "Elastic Service Architecture"
@@ -16,22 +16,22 @@ contact: static
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary: 807e9e #80B3FF
+  primary-rgb: "128,126,158" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
 # Footer settings
 footer:
   copyright: OPPO ESA Stack Project
-  location: China
+  location: Location
   social: Around the Web
   credits: Contributing
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: https://github.com/esastack
+    url: *github
 
 # Postal address (add as many lines as necessary)
 address:
@@ -46,10 +46,20 @@ credits: "Hi there! We're thrilled that you'd like to contribute to this project
 markdown: kramdown
 permalink: pretty
 
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
+projects:
+  - name: ESA Restlight
+    url: https://esastack.github.io/esa-restlight/
+    github: https://github.com/esastack/esa-restlight
+    description: ESA Restlight is a lightweight and rest-oriented web framework.
+  - name: ESA HttpClient
+    url: https://esastack.github.io/esa-httpclient/
+    github: https://github.com/esastack/esa-httpclient
+    description: ESA Restlight is a lightweight and rest-oriented web framework.
+  - name: ESA HttpServer
+    url: https://github.com/esastack/esa-httpserver
+    github: https://github.com/esastack/esa-httpserver
+    description: ESA HttpServer is an asynchronous event-driven HTTP server based on netty.
+  - name: ESA Commons
+    url: https://github.com/esastack/esa-commons
+    github: https://github.com/esastack/esa-commons
+    description: ESA Commons is the common lib of ESA Stack.

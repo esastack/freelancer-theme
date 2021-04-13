@@ -4,22 +4,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>PROJECTS</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                {% for post in site.posts %}
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        </a>
+                {% for project in site.projects %}
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>{{ project.name }}</h3>
+                            <p>{{ project.description }}</p>
+                            <p>
+                                <a href="{{ project.url }}" class="btn btn-primary" role="button" data-toggle="modal">Learn More</a>
+                                <a href="{{ project.github }}" class="btn btn-default" role="button" data-toggle="modal">
+                                    <i class="fa fa-github"></i>View on Github</a>
+                            </p>
+                        </div>
                     </div>
+                </div>
                 {% endfor %}
             </div>
         </div>
