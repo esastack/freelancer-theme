@@ -1,7 +1,8 @@
 # Site settings
 title: ESA Stack
 email: esa.stack@oppo.com
-url: https://github.com/esastack
+url: https://esastack.github.io
+github: https://esastack.github.io/
 description: "Elastic Service Architecture"
 keywords: "Micro-Services, Service Mesh, Framework, Java"
 skills: "Elastic Service Architecture"
