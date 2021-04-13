@@ -1,8 +1,8 @@
 # Site settings
 title: ESA Stack
 email: esa.stack@oppo.com
-url: https://esastack.github.io
-github: &github https://esastack.github.io/
+url: &url https://esastack.github.io
+github: &github https://github.com/esastack
 description: "Elastic Service Architecture"
 keywords: "Micro-Services, Service Mesh, Framework, Java"
 skills: "Elastic Service Architecture"
@@ -48,18 +48,22 @@ permalink: pretty
 
 projects:
   - name: ESA Restlight
-    url: https://esastack.github.io/esa-restlight/
+    baseUrl: *url
+    path: esa-restlight
     github: https://github.com/esastack/esa-restlight
     description: ESA Restlight is a lightweight and rest-oriented web framework.
   - name: ESA HttpClient
-    url: https://esastack.github.io/esa-httpclient/
+    baseUrl: *url
+    path: esa-httpclient
     github: https://github.com/esastack/esa-httpclient
     description: ESA Restlight is a lightweight and rest-oriented web framework.
   - name: ESA HttpServer
-    url: https://github.com/esastack/esa-httpserver
+    baseUrl: https://github.com
+    url: esastack/esa-httpserver
     github: https://github.com/esastack/esa-httpserver
     description: ESA HttpServer is an asynchronous event-driven HTTP server based on netty.
   - name: ESA Commons
-    url: https://github.com/esastack/esa-commons
+    baseUrl: https://github.com
+    url: esastack/esa-commons
     github: https://github.com/esastack/esa-commons
     description: ESA Commons is the common lib of ESA Stack.
