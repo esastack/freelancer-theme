@@ -52,6 +52,11 @@ projects:
     path: esa-restlight
     github: https://github.com/esastack/esa-restlight
     description: ESA Restlight is a lightweight and rest-oriented web framework.
+  - name: ESA ServiceKeeper
+    baseUrl: *url
+    path: esa-servicekeeper
+    github: https://github.com/esastack/esa-servicekeeper
+    description: ESA ServiceKeeper is a lightweight service governance framework.
   - name: ESA HttpClient
     baseUrl: *url
     path: esa-httpclient
